@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content='IE=edge'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../Css/About.css">
+        <script type="text/javascript" src="../js/about.js"></script>
+        <script type="text/javascript" src="../js/header2.js"></script>
+        <title>About Me</title>
+    </head>
+    <body>
+            <div class="header">
+                <div class="button1">
+                    <a href="../Html/picture.html">
+                        <svg class="icon-arrow before">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                        <span class="label">My Picture</span>
+                        <svg class="icon-arrow after">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <svg style="display: none;">
+                  <defs>
+                    <symbol id="arrow" viewBox="0 0 35 15">
+                      <title>Arrow</title>
+                      <path d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z "/>
+                    </symbol>
+                  </defs>
+                </svg>
+                
+                <div class="button2">
+
+                    <audio id="myAudio">
+                      <source src="music.ogg" type="audio/ogg">
+                      <source src="../Mp3/music.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <a id="play-video" class="video-play-button" onclick="playAudio()" type="button">
+                      <span></span>
+                    </a>
+
+                    <script>
+                        var x = document.getElementById("myAudio"); 
+
+                        function playAudio() { 
+                          x.play(); 
+                        } 
+
+                        function pauseAudio() { 
+                          x.pause(); 
+                        } 
+                    </script>
+
+
+                    <div id="video-overlay" class="video-overlay">
+                      <a class="video-overlay-close">&times;</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text">
+                <h1>
+                  <a href="" class="typewrite" data-period="2000" data-type='["Hi, tớ là Khoa đây :3 ", "Nhưng mà tớ thích mọi người gọi tớ là Cá :3", "Tớ năm nay 17 chủi gưỡi :3", "Nhưng mà thật ra tớ mới có 10 chủi gưỡi à :3", "Tớ chả có gì nổi bật cả :< ", "Ngoài việc đẹp trai :3 ", "Nhưng hong ai công nhận :< ", "À mà tớ có gấu rồi đấy :3", "Con gấu này tận 200k cơ :<", "Tớ thích ăn mì gói", "Nhưng từ khi xem báo bảo ăn mì gói nhiều có hại cho sức khỏe thì", "Tớ không đọc báo nữa", "Tớ có 1 thân hình vạm vỡ", "Khi dùng photoshop :<", "Hí, cảm ơn cậu đã xem tớ xiaolon nhé <", "Tớ iu mọi người <3", "À mà xem tới đây thì...", "U gayyyyyyy :v ", " ", " ", " "]'>
+                    <span class="wrap"></span>
+                  </a>
+                </h1>
+            </div>
+            
+            <div class="header-2">
+                
+            <div id="social-platforms">
+
+                <a class="btn btn-icon btn-facebook" href="https://www.facebook.com/minhtenkhoahihi"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+                <a class="btn btn-icon btn-instagram" href="https://www.instagram.com/ca_lang_thang/"><i class="fa fa-instagram"></i><span>instagram</span></a>
+                <a class="btn btn-icon btn-googleplus" href="https://myaccount.google.com/u/1/?utm_source=OGB&tab=wk&utm_medium=act"><i class="fa fa-google-plus"></i><span>Google+</span></a>
+            </div>
+
+
+            </div>
+    </body>
+</html>
